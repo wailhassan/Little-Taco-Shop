@@ -1,0 +1,187 @@
+/* General Reset and Body Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fffdf6;
+    color: #333;
+    padding: 1rem;
+}
+
+/* Header Styles */
+header {
+    background-color: #f4a261;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #264653;
+}
+
+/* Image Styling */
+figure {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+figure img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section and Article */
+main {
+    margin: 2rem auto;
+    max-width: 1000px;
+    padding: 1rem;
+}
+
+h2,
+h3 {
+    color: #2a9d8f;
+    margin-top: 1.5rem;
+}
+
+abbr {
+    text-decoration: underline dotted;
+    cursor: help;
+}
+
+strong {
+    color: #e76f51;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 0.75rem;
+    text-align: center;
+}
+
+thead {
+    background-color: #264653;
+    color: white;
+}
+
+tfoot {
+    background-color: #f4a261;
+    font-weight: bold;
+}
+
+/* Form Styling */
+form {
+    margin-top: 1rem;
+    background-color: #fdf0e2;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background-color: #21867a;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+footer a {
+    color: #2a9d8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+}
